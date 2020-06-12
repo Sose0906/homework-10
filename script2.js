@@ -16,14 +16,14 @@ It should have toString method.
  */
 
 class Account {
-    static id = 0;
+    static #statikId = 0;
     #id;
 
     constructor(name, balance = 0) {
         this.name = name;
         this.balance = balance;
-        Account.id++;
-        this.#id = Account.id
+        Account.#statikId++;
+        this.#id = Account.#statikId
     }
 
     get name() {
