@@ -82,7 +82,7 @@ class Author {
 
 }
 
-class Book extends Author {
+class Book  {
     constructor(title, author, price, quantity) {
         super();
         this.title = title;
@@ -111,7 +111,7 @@ class Book extends Author {
 
             } else {
                 alert('author must be instance of Author Class');
-                return
+                return;
             }
 
         }
@@ -143,7 +143,7 @@ class Book extends Author {
 
         if (value) {
             if (typeof (value) != 'number') {
-                alert('Quantity must be number')
+                alert('Quantity must be number');
                 return;
 
             }
